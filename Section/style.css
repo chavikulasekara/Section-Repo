@@ -1,0 +1,116 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(24,25,79,0.8519782913165266) 100%, rgba(95,89,191,0.30015756302521013) 100%, rgba(5,63,162,0.1881127450980392) 100%), url(img/bg2.jpg);
+    background-size: cover;
+    
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 170px;
+    
+}
+
+.container > h1  {
+    font-weight: 1300 !important;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 3em;
+   
+}
+
+.container > p {
+    text-align: center;
+    width: 40%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+
+
+.servies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    
+ 
+}
+
+.service{
+    margin: 5px;
+    overflow: hidden;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+    width: 200px;
+    
+}
+
+.service i{
+    font-size: 2em;
+    transition: color 2s;
+}
+
+.title{
+    font-weight: 1300 !important;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    font-size: 1.5rem;
+
+   
+}
+
+
+
+.decs{
+    line-height: 20px;
+}
+
+.service:hover{
+    background-color: cadetblue;
+transform: translateY(-3px);
+}
+
+.service::after{
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: burlywood cadetblue;
+    position: absolute;
+    left: -40px;
+    bottom: -40px;
+    transition: left 1s esse-in , left 1s esse-in;
+
+}
+
+.service:hover::after{
+    left: 0;
+    bottom: 0;
+}
+
+@media(max-width:960px){
+    .service{
+        width: 300px;
+        padding: 10px 15px;
+    }
+}
